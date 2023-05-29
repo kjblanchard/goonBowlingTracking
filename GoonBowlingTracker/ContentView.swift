@@ -8,46 +8,94 @@
 import SwiftUI
 import CoreData
 
+class NumbersOnly: ObservableObject {
+    
+    @Published var value = "" {
+        didSet {
+            let filtered = value.filter { $0.isNumber && Int(value) != 0 }
+            
+            if value != filtered {
+                value = filtered
+            }
+        }
+    }
+    func GetBowlingScore() -> Int16 {
+        let score = Int16(value) ?? 0
+        return 0...300 ~= score ? score : 0
+    }
+}
+
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @State var Score: NumbersOnly = NumbersOnly()
+
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \BowlingScore.time, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var scores: FetchedResults<BowlingScore>
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+        
+        VStack {
+            HStack {
+                Text("Total Average: ")
+                Text(String(calculateAverage()))
+            }
+
+            HStack {
+                Text("Add Score")
+                TextField("Score", text: $Score.value)
+                    .keyboardType(.decimalPad)
+            }
+            Divider()
+
+            NavigationView {
+                List {
+                    ForEach(scores) { item in
+                        NavigationLink {
+                            Text("Score: \(item.score) on \n \(item.time!, formatter: itemFormatter)")
+                        } label: {
+//                            Text(item.time!, formatter: itemFormatter)
+                            Text(String(item.score))
+                        }
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+                .toolbar {
+    #if os(iOS)
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        EditButton()
+                    }
+    #endif
+                    ToolbarItem {
+                        Button(action: addItem) {
+                            Label("Add Score", systemImage: "plus")
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
+                Text("Select an item")
             }
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+            
         }
+    }
+    
+    private func calculateAverage() -> Int {
+        var total = 0
+        var count = 0
+        for score in scores {
+            total += Int(score.score)
+            count += 1
+        }
+        return count <= 0 ? 0 : total / count
+        
     }
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newScore = BowlingScore(context: viewContext)
+            newScore.score = Score.GetBowlingScore()
+            newScore.time = Date()
 
             do {
                 try viewContext.save()
@@ -62,7 +110,7 @@ struct ContentView: View {
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
+            offsets.map { scores[$0] }.forEach(viewContext.delete)
 
             do {
                 try viewContext.save()
