@@ -26,6 +26,7 @@
 		0A30B2562A241E23006F1B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A30B2582A241E23006F1B9C /* GoonBowlingTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoonBowlingTracker.entitlements; sourceTree = "<group>"; };
 		0A30B25A2A241E23006F1B9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A41AF022A24E4B300FF23F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		0A30B24C2A241E22006F1B9C /* GoonBowlingTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0A41AF022A24E4B300FF23F4 /* Info.plist */,
 				0A30B24D2A241E22006F1B9C /* GoonBowlingTrackerApp.swift */,
 				0A30B24F2A241E22006F1B9C /* Persistence.swift */,
 				0A30B2542A241E22006F1B9C /* ContentView.swift */,
@@ -282,6 +284,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoonBowlingTracker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bowling Tracker (Quick)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -323,6 +326,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoonBowlingTracker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bowling Tracker (Quick)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
