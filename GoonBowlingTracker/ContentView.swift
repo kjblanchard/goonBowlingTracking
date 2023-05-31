@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-class NumbersOnly: ObservableObject {
+public class NumbersOnly: ObservableObject {
     
     @Published var value = "" {
         didSet {

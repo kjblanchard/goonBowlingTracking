@@ -14,6 +14,10 @@
 		0A30B2552A241E22006F1B9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A30B2542A241E22006F1B9C /* ContentView.swift */; };
 		0A30B2572A241E23006F1B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A30B2562A241E23006F1B9C /* Assets.xcassets */; };
 		0A30B25B2A241E23006F1B9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A30B25A2A241E23006F1B9C /* Preview Assets.xcassets */; };
+		0AEC989B2A276EDB00F4AA14 /* GoonBowlingTrackerWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC989A2A276EDB00F4AA14 /* GoonBowlingTrackerWatchApp.swift */; };
+		0AEC989D2A276EDB00F4AA14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC989C2A276EDB00F4AA14 /* ContentView.swift */; };
+		0AEC989F2A276EDB00F4AA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEC989E2A276EDB00F4AA14 /* Assets.xcassets */; };
+		0AEC98A22A276EDB00F4AA14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEC98A12A276EDB00F4AA14 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +31,22 @@
 		0A30B2582A241E23006F1B9C /* GoonBowlingTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoonBowlingTracker.entitlements; sourceTree = "<group>"; };
 		0A30B25A2A241E23006F1B9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A41AF022A24E4B300FF23F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0AEC98982A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoonBowlingTrackerWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AEC989A2A276EDB00F4AA14 /* GoonBowlingTrackerWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoonBowlingTrackerWatchApp.swift; sourceTree = "<group>"; };
+		0AEC989C2A276EDB00F4AA14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0AEC989E2A276EDB00F4AA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AEC98A12A276EDB00F4AA14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0A30B2472A241E22006F1B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AEC98952A276EDB00F4AA14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				0A30B24C2A241E22006F1B9C /* GoonBowlingTracker */,
+				0AEC98992A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App */,
 				0A30B24B2A241E22006F1B9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				0A30B24A2A241E22006F1B9C /* GoonBowlingTracker.app */,
+				0AEC98982A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +98,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0AEC98992A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				0AEC989A2A276EDB00F4AA14 /* GoonBowlingTrackerWatchApp.swift */,
+				0AEC989C2A276EDB00F4AA14 /* ContentView.swift */,
+				0AEC989E2A276EDB00F4AA14 /* Assets.xcassets */,
+				0AEC98A02A276EDB00F4AA14 /* Preview Content */,
+			);
+			path = "GoonBowlingTrackerWatch Watch App";
+			sourceTree = "<group>";
+		};
+		0AEC98A02A276EDB00F4AA14 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0AEC98A12A276EDB00F4AA14 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +137,23 @@
 			productReference = 0A30B24A2A241E22006F1B9C /* GoonBowlingTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0AEC98972A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AEC98A52A276EDB00F4AA14 /* Build configuration list for PBXNativeTarget "GoonBowlingTrackerWatch Watch App" */;
+			buildPhases = (
+				0AEC98942A276EDB00F4AA14 /* Sources */,
+				0AEC98952A276EDB00F4AA14 /* Frameworks */,
+				0AEC98962A276EDB00F4AA14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoonBowlingTrackerWatch Watch App";
+			productName = "GoonBowlingTrackerWatch Watch App";
+			productReference = 0AEC98982A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -111,6 +165,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					0A30B2492A241E22006F1B9C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0AEC98972A276EDB00F4AA14 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -129,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				0A30B2492A241E22006F1B9C /* GoonBowlingTracker */,
+				0AEC98972A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +202,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AEC98962A276EDB00F4AA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AEC98A22A276EDB00F4AA14 /* Preview Assets.xcassets in Resources */,
+				0AEC989F2A276EDB00F4AA14 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -155,6 +222,15 @@
 				0A30B24E2A241E22006F1B9C /* GoonBowlingTrackerApp.swift in Sources */,
 				0A30B2552A241E22006F1B9C /* ContentView.swift in Sources */,
 				0A30B2502A241E22006F1B9C /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AEC98942A276EDB00F4AA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AEC989D2A276EDB00F4AA14 /* ContentView.swift in Sources */,
+				0AEC989B2A276EDB00F4AA14 /* GoonBowlingTrackerWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +430,67 @@
 			};
 			name = Release;
 		};
+		0AEC98A32A276EDB00F4AA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoonBowlingTrackerWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = H34NGW287W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GoonBowlingTrackerWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		0AEC98A42A276EDB00F4AA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoonBowlingTrackerWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = H34NGW287W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GoonBowlingTrackerWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,6 +508,15 @@
 			buildConfigurations = (
 				0A30B25F2A241E23006F1B9C /* Debug */,
 				0A30B2602A241E23006F1B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AEC98A52A276EDB00F4AA14 /* Build configuration list for PBXNativeTarget "GoonBowlingTrackerWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AEC98A32A276EDB00F4AA14 /* Debug */,
+				0AEC98A42A276EDB00F4AA14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
