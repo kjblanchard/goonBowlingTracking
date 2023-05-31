@@ -18,7 +18,32 @@
 		0AEC989D2A276EDB00F4AA14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC989C2A276EDB00F4AA14 /* ContentView.swift */; };
 		0AEC989F2A276EDB00F4AA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEC989E2A276EDB00F4AA14 /* Assets.xcassets */; };
 		0AEC98A22A276EDB00F4AA14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEC98A12A276EDB00F4AA14 /* Preview Assets.xcassets */; };
+		0AEC98A72A27767D00F4AA14 /* GoonBowlingTrackerWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0AEC98982A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AEC98A82A27767D00F4AA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A30B2422A241E22006F1B9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AEC98972A276EDB00F4AA14;
+			remoteInfo = "GoonBowlingTrackerWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AEC98AA2A27767D00F4AA14 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0AEC98A72A27767D00F4AA14 /* GoonBowlingTrackerWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A2878992A24C58500F599F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +87,7 @@
 				0A30B24C2A241E22006F1B9C /* GoonBowlingTracker */,
 				0AEC98992A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App */,
 				0A30B24B2A241E22006F1B9C /* Products */,
+				0AEC98A62A27767D00F4AA14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +143,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0AEC98A62A27767D00F4AA14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,10 +160,12 @@
 				0A30B2462A241E22006F1B9C /* Sources */,
 				0A30B2472A241E22006F1B9C /* Frameworks */,
 				0A30B2482A241E22006F1B9C /* Resources */,
+				0AEC98AA2A27767D00F4AA14 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0AEC98A92A27767D00F4AA14 /* PBXTargetDependency */,
 			);
 			name = GoonBowlingTracker;
 			productName = GoonBowlingTracker;
@@ -235,6 +270,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AEC98A92A27767D00F4AA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AEC98972A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App */;
+			targetProxy = 0AEC98A82A27767D00F4AA14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0A30B25C2A241E23006F1B9C /* Debug */ = {
