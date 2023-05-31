@@ -61,6 +61,7 @@
 		0AEC989C2A276EDB00F4AA14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AEC989E2A276EDB00F4AA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AEC98A12A276EDB00F4AA14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AEC98AB2A277C4700F4AA14 /* GoonBowlingTrackerWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoonBowlingTrackerWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 		0AEC98992A276EDB00F4AA14 /* GoonBowlingTrackerWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				0AEC98AB2A277C4700F4AA14 /* GoonBowlingTrackerWatch-Watch-App-Info.plist */,
 				0AEC989A2A276EDB00F4AA14 /* GoonBowlingTrackerWatchApp.swift */,
 				0AEC989C2A276EDB00F4AA14 /* ContentView.swift */,
 				0AEC989E2A276EDB00F4AA14 /* Assets.xcassets */,
@@ -484,9 +486,11 @@
 				DEVELOPMENT_TEAM = H34NGW287W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoonBowlingTrackerWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GoonBowlingTrackerWatch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.supergoon.GoonBowlingTracker;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,9 +518,11 @@
 				DEVELOPMENT_TEAM = H34NGW287W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoonBowlingTrackerWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GoonBowlingTrackerWatch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.supergoon.GoonBowlingTracker;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
